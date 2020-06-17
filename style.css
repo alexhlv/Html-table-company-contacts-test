@@ -1,0 +1,42 @@
+/* ЗАДАНИЕ */
+
+/* В ТАБЛИЦЕ:
+
+1. Каждую 2-ю строку таблицы выделить серым цветом (background-color)
+2. Текст в шапке таблицы разукрасить другим цветом (color)
+3. Добавить стилизацию к тексту в ТЕЛЕ таблице:
+ - шрифт monospace
+ - размер 12px
+ - в колонке compane текст должен быть заглавными буквами и подчеркнут
+ */ 
+ 
+
+table {
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  /* ВАШИ СТИЛИ НИЖЕ */
+  
+  tbody>tr:nth-child(2n-1) {
+   background-color: grey;
+  }
+  
+  .head_color {
+    color: red;
+  }
+  
+  tbody {
+    font-family: monospace;
+    font-size: 12px;
+  }
+  
+  table td:first-child {
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
